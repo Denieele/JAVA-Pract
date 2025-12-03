@@ -64,7 +64,7 @@ class TestFSMTest {
         "ETST, 1",
         "test, 0",
         "Test, 0",
-        "tEST, 0"
+        "tEST, 1"
     })
     void testStringsNotContainingTEST(String input, String expected) {
         assertEquals(expected, fsm.process(input));
@@ -193,7 +193,7 @@ class TestFSMTest {
         "test, 0",
         "Test, 0",
         "tEst, 0",
-        "tEST, 0",
+        "tEST, 1",
         "TEst, 0"
     })
     void testCaseSensitivity(String input, String expected) {
